@@ -43,6 +43,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // Simple line icons
+    'nuxt-simple-line-icons'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

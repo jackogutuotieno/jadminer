@@ -11,7 +11,7 @@
                     <b-nav-item-dropdown text="Dashboard" right>
                         <b-dropdown-item to="/ecommerce">E-commerce</b-dropdown-item>
                         <b-dropdown-item to="/fleetmanagement">Fleet Management</b-dropdown-item>
-                        <b-dropdown-item to="/hospital">Hospital</b-dropdown-item>
+                        <b-dropdown-item to="/hospital">School Management</b-dropdown-item>
                     </b-nav-item-dropdown>
                     <b-nav-item-dropdown text="Pages" right>
                         <b-dropdown-item to="/settings">Settings</b-dropdown-item>
@@ -45,6 +45,12 @@
                     <b-nav-item-dropdown text="Maps" right>
                         <b-dropdown-item to="/maps">Google Maps</b-dropdown-item>
                     </b-nav-item-dropdown>
+                </b-navbar-nav>
+                <b-navbar-nav class="ml-auto">
+                    <b-nav-item href="#"><span class="icon-settings"></span></b-nav-item>
+                    <b-nav-item href="#"><span class="icon-bell"></span></b-nav-item>
+                    <b-nav-item href="#"><span class="icon-envelope-open"></span></b-nav-item>
+                    <b-nav-item href="#"><span class="icon-menu"></span></b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
