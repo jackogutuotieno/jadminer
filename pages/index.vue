@@ -1,8 +1,40 @@
 <template>
-  <div class="container">
-    <div>
-      
-    </div>
+  <div>
+    <b-container>
+      <Header />
+    </b-container>
+    <b-container>
+      <b-row>
+        <b-col lg="3">
+          <b-card title="Card title" sub-title="Card subtitle">
+            <b-card-text>
+              Some quick example text to build on the.
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col lg="3">
+          <b-card title="Card title" sub-title="Card subtitle">
+            <b-card-text>
+              Some quick example text to build on the.
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col lg="3">
+          <b-card title="Card title" sub-title="Card subtitle">
+            <b-card-text>
+              Some quick example text to build on the.
+            </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col lg="3">
+          <b-card title="Card title" sub-title="Card subtitle">
+            <b-card-text>
+              Some quick example text to build on the.
+            </b-card-text>
+          </b-card>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -11,15 +43,6 @@ export default {}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .title {
   font-family:
     'Quicksand',

@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-navbar toggleable="lg" type="dark" variant="dark">
-            <b-navbar-brand href="#">NavBar</b-navbar-brand>
+            <b-navbar-brand href="#">jAdminer</b-navbar-brand>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -50,9 +50,10 @@
                     <b-nav-item href="#"><span class="icon-settings"></span></b-nav-item>
                     <b-nav-item href="#"><span class="icon-bell"></span></b-nav-item>
                     <b-nav-item href="#"><span class="icon-envelope-open"></span></b-nav-item>
-                    <b-nav-item href="#"><span class="icon-menu"></span></b-nav-item>
+                    <b-nav-item href="#" v-b-toggle.sidebar-right><span class="icon-menu"></span></b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
+        <Sidebar />
     </div>
 </template>
