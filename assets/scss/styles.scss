@@ -1,9 +1,24 @@
-body {
-    font-family: 'Quicksand', san-serif;
-    font-weight: 400;
-}
+// Mixins
+@import './partials/mixins';
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Quicksand', san-serif;
-    font-weight: 600;
-}
+// Colors
+@import './partials/colors';
+
+
+// Layouts
+@import './partials/layouts';
+
+// Fonts
+@import './partials/fonts';
+
+// Header
+@import './partials/header';
+
+// Footer
+@import './partials/footer';
+
+// Navigation
+@import './partials/navigation';
+
+// Default Dashboard
+@import './partials/default';

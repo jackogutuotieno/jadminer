@@ -1,0 +1,11 @@
+.mainHeader {
+    padding: 2rem;
+    background-color: $primary_color;
+    @include border-radius(0);
+    h1 {
+        color: $white;
+    }
+    p {
+        color: $white;
+    }
+}

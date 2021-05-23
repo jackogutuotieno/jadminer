@@ -18,17 +18,17 @@
                         icon: 'fas fa-tachometer-alt',
                         child: [
                             {
+                                to: '/index',
+                                title: 'Default'
+                            },
+                            {
                                 to: '/ecommerce',
                                 title: 'E-Commerce'
                             },
                             {
                                 to: '/fleet',
                                 title: 'Fleet'
-                            },
-                            {
-                                to: '/School',
-                                title: 'School'
-                            },
+                            }
                         ]
                     },
                     {

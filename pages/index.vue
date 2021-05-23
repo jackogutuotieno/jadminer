@@ -1,75 +1,52 @@
 <template>
   <div>
-    <b-container>
+    <b-container fluid class="p-0">
       <Header />
     </b-container>
-    <b-container>
+    <b-container class="counterSummary">
       <b-row>
         <b-col lg="3">
-          <b-card title="Card title" sub-title="Card subtitle">
+          <b-card title="Registered Users" shadow>
             <b-card-text>
-              Some quick example text to build on the.
+              <h2><CountTo /></h2>
+              <span class="icon-user-follow"></span>
             </b-card-text>
           </b-card>
         </b-col>
         <b-col lg="3">
-          <b-card title="Card title" sub-title="Card subtitle">
+          <b-card title="Online Users" shadow>
             <b-card-text>
-              Some quick example text to build on the.
+              <h2>100</h2>
+              <span class="icon-people"></span>
             </b-card-text>
           </b-card>
         </b-col>
         <b-col lg="3">
-          <b-card title="Card title" sub-title="Card subtitle">
+          <b-card title="Daily Visits" shadow>
             <b-card-text>
-              Some quick example text to build on the.
+              <h2>2000</h2>
+              <span class="icon-eye"></span>
             </b-card-text>
           </b-card>
         </b-col>
         <b-col lg="3">
-          <b-card title="Card title" sub-title="Card subtitle">
+          <b-card title="Orders" shadow>
             <b-card-text>
-              Some quick example text to build on the.
+              <h2>1900</h2>
+              <span class="icon-cursor"></span>
             </b-card-text>
           </b-card>
         </b-col>
       </b-row>
     </b-container>
+    <b-container class="chartData">
+      <b-row>
+        <b-col lg="5">
+          <BarChart />
+        </b-col>
+        <b-col lg="5">
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
-
-<style>
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
