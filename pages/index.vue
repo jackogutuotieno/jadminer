@@ -41,10 +41,21 @@
     </b-container>
     <b-container class="chartData">
       <b-row>
-        <b-col lg="5">
-          <BarChart />
+        <b-col lg="8">
+          <div class="chart">
+            <div class="title-header">
+              <h3>No of Calls</h3>
+            </div>
+            <BarChart />
+          </div>
         </b-col>
-        <b-col lg="5">
+        <b-col lg="4">
+          <div class="chart">
+            <div class="title-header">
+              <h3>Clients by Sector</h3>
+            </div>
+            <DonutChart />
+          </div>
         </b-col>
       </b-row>
     </b-container>

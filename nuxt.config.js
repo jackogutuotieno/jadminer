@@ -28,7 +28,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/vue-sidebar-menu.js'},
-    {src: '~/plugins/chart.js', mode: 'client'},
+    {src: '~/plugins/vue-apexcharts.js'},
     { src: '~/plugins/vue-listable.js'},
   ],
 
@@ -52,6 +52,8 @@ export default {
     '@nuxt/content',
     // Simple line icons
     'nuxt-simple-line-icons',
+    // High charts
+    'nuxt-highcharts',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
