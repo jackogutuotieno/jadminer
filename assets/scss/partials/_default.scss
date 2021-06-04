@@ -1,3 +1,24 @@
 .counterSummary {
     margin-top: -3rem;
 }
+
+.tasksTable {
+    padding: 1rem;
+    thead {
+        background-color: $primary_color;
+        color: $white;
+    }
+}
+
+.b-calendar {
+    .b-calendar-inner {
+        min-width: 100%;
+    }
+}
+
+.calWidget {
+    margin-top: 1rem;
+    @include box_shadow(1);
+    padding: 1rem;
+    background-color: $white;
+}

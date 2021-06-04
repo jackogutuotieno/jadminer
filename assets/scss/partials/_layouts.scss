@@ -70,3 +70,41 @@ h3 {
     @include box_shadow(1);
   }
 }
+
+.block-list {
+  ul {
+    padding: 1rem;
+    li {
+      display: block;
+      position: relative;
+      border-bottom: 1px solid rgba($color: $black, $alpha: .2);
+      margin-bottom: 1rem;
+      span {
+        display: inline-block;
+        top: 0;
+        bottom: auto;
+        font-size: 1rem;
+        font-weight: 600
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      h3 {
+        float: left;
+        background: purple;
+        color: #fff;
+        font-size: .6rem;
+        padding: .45rem .5rem;
+        margin-right: .5rem;
+        border-radius: 50%;
+        &:after {
+          display: none;
+        }
+      }
+      p {
+        clear: both;
+        font-size: .9rem;
+      }
+    }
+  }
+}

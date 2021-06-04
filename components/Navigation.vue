@@ -1,5 +1,5 @@
 <template>
-  <sidebar-menu :menu="menu" />
+  <sidebar-menu :menu="menu" :collapsed="true" />
 </template>
 
 <script>
@@ -19,7 +19,7 @@
                         child: [
                             {
                                 to: '/index',
-                                title: 'Default'
+                                title: 'Default (Call Centre)'
                             },
                             {
                                 to: '/ecommerce',
@@ -155,9 +155,6 @@
                         ]
                     },
                 ],
-                /* props: {
-                    collapsed: true,
-                } */
             }
         }
     }

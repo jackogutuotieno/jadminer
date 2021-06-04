@@ -1,4 +1,8 @@
-<listable :headings="headings" @sorted="onSort" />
+<template>
+  <div>
+    <listable :headings="headings" @sorted="onSort" />
+  </div>
+</template>
 
 <script>
 export default {
@@ -22,15 +26,5 @@ export default {
       }
     ]
   }),
-  methods: {
-    onSort(sort) {
-      let column = sort.column;
-      let descending = sort.descending;
-      let ascending = !descending;
-      console.log(column);
-      console.log(descending);
-      console.log(ascending);
-    }
-  }
 }
 </script>
