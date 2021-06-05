@@ -13,98 +13,98 @@
                         hiddenOnCollapse: true
                     },
                     {
-                        to: '/',
+                        href: '/',
                         title: 'Dashboard',
                         icon: 'icon-home',
                         child: [
                             {
-                                to: '/index',
+                                href: '/',
                                 title: 'Default (Call Centre)'
                             },
                             {
-                                to: '/ecommerce',
+                                href: '/ecommerce',
                                 title: 'E-Commerce'
                             },
                             {
-                                to: '/fleet',
+                                href: '/fleet',
                                 title: 'Fleet'
                             }
                         ]
                     },
                     {
-                        to: '/',
+                        href: '/',
                         title: 'Pages',
                         icon: 'icon-doc',
                         child: [
                             {
-                                to: '/settings',
+                                href: '/settings',
                                 title: 'Settings'
                             },
                             {
-                                to: '/pricing',
+                                href: '/pricing',
                                 title: 'Pricing'
                             },
                             {
-                                to: '/invoice',
+                                href: '/invoice',
                                 title: 'Invoice'
                             },
                             {
-                                to: '/about',
+                                href: '/about',
                                 title: 'About'
                             },
                             {
-                                to: '/contact',
+                                href: '/contact',
                                 title: 'Contact'
                             },
                         ]
                     },
                     {
-                        to: '/',
+                        href: '/',
                         title: 'Auth',
                         icon: 'icon-lock',
                         child: [
                             {
-                                to: '/register',
+                                href: '/register',
                                 title: 'Register'
                             },
                             {
-                                to: '/login',
+                                href: '/login',
                                 title: 'Login'
                             },
                             {
-                                to: '/reset-password',
+                                href: '/reset-password',
                                 title: 'Reset Password'
                             },
                             {
-                                to: '/error-404',
+                                href: '/error-404',
                                 title: 'Error 404'
                             },
                             
                         ]
                     },
                     {
-                        to: '/',
+                        href: '/',
                         title: 'User Interface',
                         icon: 'icon-pencil',
                         child: [
                             {
-                                to: '/alerts',
+                                href: '/alerts',
                                 title: 'Alerts'
                             },
                             {
-                                to: '/buttons',
+                                href: '/buttons',
                                 title: 'Buttons'
                             },
                             {
-                                to: '/Cards',
+                                href: '/Cards',
                                 title: 'Cards'
                             },
                             {
-                                to: '/tabs',
+                                href: '/tabs',
                                 title: 'Tabs'
                             },
                             {
-                                to: '/carousel',
+                                href: '/carousel',
                                 title: 'Carousel'
                             },
                             {
