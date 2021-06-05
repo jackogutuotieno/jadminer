@@ -105,6 +105,39 @@ h3 {
         clear: both;
         font-size: .9rem;
       }
+      &:last-child {
+        border-bottom: none;
+      }
     }
+  }
+}
+
+.page-item {
+  &.active {
+    .page-link {
+      z-index: 3;
+      color: #fff;
+      background-color: $primary_color;
+      border-color: $primary_color;
+    }
+  }
+}
+
+.btn {
+  max-width: 360px;
+}
+
+.btn-primary {
+  background-color: $primary_color;
+  border: none;
+  border-radius: 0;
+  border: 1px solid $primary_color;
+  &:hover {
+    background-color: $white;
+    color: $primary_color;
+    border-color: $primary_color;
+  }
+  &:focus {
+    background-color: $primary_color;
   }
 }

@@ -6,7 +6,6 @@
 </template>
 <script>
 export default {
-  name: "App",
   data() {
     return {
       currentPage: 1,
@@ -14,43 +13,43 @@ export default {
       items: [
         { 
             id: 1, 
-            firstName: "alex", 
-            lastName: "green",
-            organization: "eewewe",
-            callType: "dwdwd",
-            status: "resolved"
+            name: "John Doe", 
+            date: "01/01/2021",
+            organization: "Organization One",
+            callPriority: "High",
+            status: "Open"
         },
         {
-            id: 2,
-            firstName: "may",
-            lastName: "smith",
-            organization: "eewewe",
-            callType: "dwdwd",
-            status: "resolved"
+            id: 2, 
+            name: "Mary Doe", 
+            date: "01/02/2021",
+            organization: "Organization Two",
+            callPriority: "Low",
+            status: "Closed"
         },
         { 
             id: 3, 
-            firstName: "james", 
-            lastName: "jones",
-            organization: "eewewe",
-            callType: "dwdwd",
-            status: "resolved"
+            name: "Karen Doe", 
+            date: "01/03/2021",
+            organization: "Organization Three",
+            callPriority: "Medium",
+            status: "Open"
         },
         { 
-            id: 3, 
-            firstName: "james", 
-            lastName: "jones",
-            organization: "eewewe",
-            callType: "dwdwd",
-            status: "resolved"
+            id: 4, 
+            name: "Phillip Doe", 
+            date: "01/04/2021",
+            organization: "Organization Four",
+            callPriority: "High",
+            status: "In Progress"
         },
         { 
-            id: 3, 
-            firstName: "james", 
-            lastName: "jones",
-            organization: "eewewe",
-            callType: "dwdwd",
-            status: "resolved"
+            id: 5, 
+            name: "Anne Doe", 
+            date: "01/05/2021",
+            organization: "Organization Four",
+            callPriority: "Medium",
+            status: "In Progress"
         },
         { 
             id: 3, 

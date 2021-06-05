@@ -15,7 +15,7 @@
                     {
                         to: '/',
                         title: 'Dashboard',
-                        icon: 'fas fa-tachometer-alt',
+                        icon: 'icon-home',
                         child: [
                             {
                                 to: '/index',
@@ -34,7 +34,7 @@
                     {
                         to: '/',
                         title: 'Pages',
-                        icon: 'fas fa-file',
+                        icon: 'icon-doc',
                         child: [
                             {
                                 to: '/settings',
@@ -61,7 +61,7 @@
                     {
                         to: '/',
                         title: 'Auth',
-                        icon: 'fas fa-lock',
+                        icon: 'icon-lock',
                         child: [
                             {
                                 to: '/register',
@@ -85,7 +85,7 @@
                     {
                         to: '/',
                         title: 'User Interface',
-                        icon: 'fas fa-paint-brush',
+                        icon: 'icon-pencil',
                         child: [
                             {
                                 to: '/alerts',
@@ -116,37 +116,18 @@
                     {
                         to: '/',
                         title: 'Charts',
-                        icon: 'fas fa-chart-line',
+                        icon: 'icon-graph',
                         child: [
                             {
-                                to: '/chartjs',
-                                title: 'Chart.js'
+                                to: '/apex-charts',
+                                title: 'Apex Charts'
                             },
-                            {
-                                to: '/highcharts',
-                                title: 'Highcharts'
-                            }
-                        ]
-                    },
-                    {
-                        to: '/',
-                        title: 'Tables',
-                        icon: 'fas fa-table',
-                        child: [
-                            {
-                                to: '/bootstrap-tables',
-                                title: 'Chart.js'
-                            },
-                            {
-                                to: '/data-tables',
-                                title: 'Data Tables'
-                            }
                         ]
                     },
                     {
                         to: '/',
                         title: 'Maps',
-                        icon: 'fas fa-map-marker-alt',
+                        icon: 'icon-map',
                         child: [
                             {
                                 to: '/google-maps',

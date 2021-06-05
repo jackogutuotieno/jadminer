@@ -5,8 +5,7 @@
                 <h1>Welcome back, <span>John Doe</span></h1>
                 <hr class="my-4">
                 <p>
-                It uses utility classes for typography and spacing to space content out within the larger
-                container.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at varius nibh. Nulla facilisi. Proin id tempor purus, sodales efficitur nibh.
                 </p>
             </b-container>
         </b-jumbotron>

@@ -1,42 +1,34 @@
 <template>
-  <div>
+  <div class="barChart">
     <apexchart 
-      width="100%" type="area" :options="options" :series="series">
+      width="100%" type="bar" :options="options" :series="series">
     </apexchart>  
   </div>
 </template>
 <script>
 export default {
   data: () => ({
+    series: [{
+      data: [40, 50, 80]
+    }],
     options: {
       chart: {
-        id: 'noOfCalls',
-        title: {
-          text: "Chart one"
+        type: 'bar',
+        height: 200
+      },
+      plotOptions: {
+        bar: {
+          borderRadius: 4,
+          horizontal: true,
         }
       },
+      dataLabels: {
+        enabled: false
+      },
       xaxis: {
-        categories: [
-         "Jan",
-         "Feb",
-         "Mar",
-         "Apr",
-         "May",
-         "Jun",
-         "Jul",
-         "Aug",
-         "Sep",
-         "Oct",
-         "Nov",
-         "Dec"
-        ]
-      }
+        categories: ['High', 'Medium', 'Low'],
+      },
     },
-    series: [{
-      title: 'No of Calls',
-      name: 'series-1',
-      data: [55, 62, 89, 66, 98, 72, 101, 75, 94, 120, 117, 139]
-    }]
   })
 }
 </script>
