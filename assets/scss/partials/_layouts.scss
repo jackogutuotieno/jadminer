@@ -123,21 +123,9 @@ h3 {
   }
 }
 
-.btn {
-  max-width: 360px;
-}
-
-.btn-primary {
-  background-color: $primary_color;
-  border: none;
-  border-radius: 0;
-  border: 1px solid $primary_color;
-  &:hover {
-    background-color: $white;
+a {
+  color: $primary_color;
+  &:hover, &:focus {
     color: $primary_color;
-    border-color: $primary_color;
-  }
-  &:focus {
-    background-color: $primary_color;
   }
 }

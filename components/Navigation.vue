@@ -96,8 +96,12 @@
                                 title: 'Buttons'
                             },
                             {
-                                href: '/Cards',
-                                title: 'Cards'
+                                href: '/calendar',
+                                title: 'Calendar'
+                            },
+                            {
+                                href: '/card',
+                                title: 'Card'
                             },
                             {
                                 href: '/tabs',
@@ -108,7 +112,7 @@
                                 title: 'Carousel'
                             },
                             {
-                                to: '/modal',
+                                href: '/modal',
                                 title: 'Modal'
                             },
                         ]

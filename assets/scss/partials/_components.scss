@@ -2,3 +2,68 @@
 .alert {
     font-weight: 600;
 }
+
+// Card
+.card-img-overlay {
+    background-color: rgba(0,0,0,.5);
+}
+
+// Tabs
+.nav-tabs {
+    .nav-link {
+        font-weight: 600;
+        &.active {
+            background-color: transparent;
+            border-color: transparent;
+            border-bottom: 3px solid $primary_color;
+        }
+    }
+    .nav-item {
+        &.show {
+            .nav-link {
+                background-color: transparent;
+                border-color: transparent;
+                border-bottom: 3px solid $primary_color;
+            }
+        }
+    }
+}
+
+// Carousel
+.carousel-caption {
+    text-align: left;
+    background-color: rgba($color: $black, $alpha: .5);
+    padding: 2rem;
+    bottom: 30%;
+    width: 45%;
+}
+
+// Buttons
+.btn {
+    max-width: 360px;
+    border-radius: 0;
+}
+  
+.btn-primary {
+    background-color: $primary_color;
+    border: none;
+    border-radius: 0;
+    border: 1px solid $primary_color;
+    &:hover {
+        background-color: $white;
+        color: $primary_color;
+        border-color: $primary_color;
+    }
+    &:focus {
+        background-color: $primary_color;
+    }
+}
+
+// Modal
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-footer {
+    justify-content: start;
+}
