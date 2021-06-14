@@ -30,6 +30,7 @@ export default {
     { src: '~/plugins/vue-sidebar-menu.js'},
     {src: '~/plugins/vue-apexcharts.js'},
     { src: '~/plugins/vue-listable.js'},
+    { src: '~/plugins/vue-good-table', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

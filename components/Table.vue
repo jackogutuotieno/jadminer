@@ -1,82 +1,66 @@
 <template>
-  <div class="tasksTable">
-    <b-table :items="items" :per-page="perPage" :current-page="currentPage" class="table-hover table-striped"></b-table>
-    <b-pagination v-model="currentPage" :total-rows="items.length" :per-page="perPage"></b-pagination>
+  <div>
+    <vue-good-table
+      :columns="columns"
+      :rows="rows"
+      :pagination-options="{
+      enabled: true,
+      mode: 'records',
+      perPage: 5,
+      position: 'top',
+      perPageDropdown: [3, 7, 9],
+      dropdownAllowAll: false,
+      setCurrentPage: 2,
+      nextLabel: 'next',
+      prevLabel: 'prev',
+      rowsPerPageLabel: 'Rows per page',
+      ofLabel: 'of',
+      pageLabel: 'page', // for 'pages' mode
+      allLabel: 'All',
+      infoFn: (params) => `my own page ${params.firstRecordOnPage}`, 
+    }"
+    >
+    </vue-good-table>
   </div>
 </template>
+
 <script>
 export default {
-  data() {
+  name: 'my-component',
+  data(){
     return {
-      currentPage: 1,
-      perPage: 5,
-      items: [
-        { 
-            id: 1, 
-            name: "John Doe", 
-            date: "01/01/2021",
-            organization: "Organization One",
-            callPriority: "High",
-            status: "Open"
+      columns: [
+        {
+          label: 'Name',
+          field: 'name',
         },
         {
-            id: 2, 
-            name: "Mary Doe", 
-            date: "01/02/2021",
-            organization: "Organization Two",
-            callPriority: "Low",
-            status: "Closed"
+          label: 'Age',
+          field: 'age',
+          type: 'number',
         },
-        { 
-            id: 3, 
-            name: "Karen Doe", 
-            date: "01/03/2021",
-            organization: "Organization Three",
-            callPriority: "Medium",
-            status: "Open"
+        {
+          label: 'Created On',
+          field: 'createdAt',
+          type: 'date',
+          dateInputFormat: 'yyyy-MM-dd',
+          dateOutputFormat: 'yyyy-MM-dd',
         },
-        { 
-            id: 4, 
-            name: "Phillip Doe", 
-            date: "01/04/2021",
-            organization: "Organization Four",
-            callPriority: "High",
-            status: "In Progress"
+        {
+          label: 'Percent',
+          field: 'score',
+          type: 'percentage',
         },
-        { 
-            id: 5, 
-            name: "Anne Doe", 
-            date: "01/05/2021",
-            organization: "Organization Four",
-            callPriority: "Medium",
-            status: "In Progress"
-        },
-        { 
-            id: 3, 
-            firstName: "james", 
-            lastName: "jones",
-            organization: "eewewe",
-            callType: "dwdwd",
-            status: "resolved"
-        },
-        { 
-            id: 3, 
-            firstName: "james", 
-            lastName: "jones",
-            organization: "eewewe",
-            callType: "dwdwd",
-            status: "resolved"
-        },
-        { 
-            id: 3, 
-            firstName: "james", 
-            lastName: "jones",
-            organization: "eewewe",
-            callType: "dwdwd",
-            status: "resolved"
-        },
-      ]
+      ],
+      rows: [
+        { id:1, name:"John", age: 20, createdAt: '2011-10-31',score: 0.03343 },
+        { id:2, name:"Jane", age: 24, createdAt: '2011-10-31', score: 0.03343 },
+        { id:3, name:"Susan", age: 16, createdAt: '2011-10-30', score: 0.03343 },
+        { id:4, name:"Chris", age: 55, createdAt: '2011-10-11', score: 0.03343 },
+        { id:5, name:"Dan", age: 40, createdAt: '2011-10-21', score: 0.03343 },
+        { id:6, name:"John", age: 20, createdAt: '2011-10-31', score: 0.03343 },
+      ],
     };
-  }
+  },
 };
 </script>

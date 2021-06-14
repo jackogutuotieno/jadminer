@@ -9,19 +9,23 @@ body {
   background-color: rgba($color: $black, $alpha: .08);
 }
 
+.counterSummary,
+.block-list {
+  span {
+    position: absolute;
+    bottom: 2.2rem;
+    right: 1rem;
+    font-size: 2rem;
+    color: rgba($color: $primary_color, $alpha: .5);
+}
+}
+
 // Cards
 .card {
   position: relative;
   @include border-radius(0);
   @include box-shadow(1);
   border: none;
-  span {
-      position: absolute;
-      bottom: 2.2rem;
-      right: 1rem;
-      font-size: 2rem;
-      color: rgba($color: $primary_color, $alpha: .5);
-  }
   h2 {
       font-size: 3rem;
       span {

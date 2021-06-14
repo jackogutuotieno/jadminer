@@ -17,14 +17,3 @@ nav {
         font-weight: 600;
     }
 }
-
-.v-sidebar-menu {
-    .vsm--link {
-        &.vsm--link_active {
-            background-color: $primary_color;
-        }
-    }
-}
-
-.v-sidebar-menu .vsm--link.vsm--link_exact-active {background-color: $primary_color;}
-.vsm--link_level-1.vsm--link_hover {background-color: $primary_color;}
