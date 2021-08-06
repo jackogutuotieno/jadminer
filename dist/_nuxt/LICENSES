@@ -704,6 +704,8 @@
  * SOFTWARE.
  */
 
+//! invalid number
+
 
 /*!
   * vue-router v3.5.1
