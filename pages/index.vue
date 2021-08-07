@@ -59,29 +59,11 @@
               <h3>My Tasks</h3>
             </div>
             <ul>
-              <li>
-                <h3>01</h3>
-                <h4>Call John Doe</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span class="status">Done</span>
-              </li>
-              <li>
-                <h3>02</h3>
-                <h4>Call John Doe</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span class="status">In progress</span>
-              </li>
-              <li>
-                <h3>03</h3>
-                <h4>Call John Doe</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span class="status">Not done</span>
-              </li>
-              <li>
-                <h3>04</h3>
-                <h4>Call John Doe</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <span class="status">Not done</span>
+              <li v-for="task in tasks" :key="task.id">
+                <h3>{{ task.id }}</h3>
+                <h4>{{ task.title }}</h4>
+                <p>{{ task.text }}</p>
+                <span class="status">{{ task.status }}</span>
               </li>
             </ul>
             <b-link to="/" class="btn btn-primary m-2">View all tasks</b-link>
@@ -105,20 +87,12 @@
               <h3>Notifications</h3>
             </div>
             <ul class="mb-0">
-              <li>
-                <h4>Lorem ipsum dolor sit amet</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </li>
-              <li>
-                <h4>Phasellus cursus purus lacus</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </li>
-              <li>
-                <h4>Morbi eleifend lacus sit amet</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <li v-for="notification in notifications" :key="notification.id">
+                <h4>{{ notification.title }}</h4>
+                <p>{{ notification.text }}</p>
               </li>
             </ul>
-            <b-link to="/" class="btn btn-primary m-2">View all notifications</b-link>
+            <b-link to="/" class="btn btn-primary m-2">View all <span class="icon-arrow-right"></span> </b-link>
           </div>
           <div class="calWidget">
             <h3>Calendar</h3>
@@ -129,3 +103,55 @@
     </b-container>
   </div>
 </template>
+
+<script>
+  export default {
+    data () {
+      return {
+        notifications: [
+          { 
+            id:'1', 
+            title: 'First notification',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at purus et nisi eleifend venenatis.'
+          },
+          { 
+            id:'2', 
+            title: 'Second notification',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at purus et nisi eleifend venenatis.'
+          },
+          { 
+            id:'3', 
+            title: 'Third notification',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at purus et nisi eleifend venenatis.'
+          },
+        ],
+        tasks: [
+          { 
+            id:'1', 
+            title: 'Call John Doe',
+            text: 'Nulla suscipit vel diam non commodo. Suspendisse sem felis, ornare sed bibendum nec, euismod sed neque. In semper nibh eget odio convallis, id molestie nunc aliquet.',
+            status: 'Active'
+          },
+          { 
+            id:'2', 
+            title: 'Call John Doe',
+            text: 'Nulla suscipit vel diam non commodo. Suspendisse sem felis, ornare sed bibendum nec, euismod sed neque. In semper nibh eget odio convallis, id molestie nunc aliquet.',
+            status: 'Active'
+          },
+          { 
+            id:'3', 
+            title: 'Call John Doe',
+            text: 'Nulla suscipit vel diam non commodo. Suspendisse sem felis, ornare sed bibendum nec, euismod sed neque. In semper nibh eget odio convallis, id molestie nunc aliquet.',
+            status: 'Active'
+          },
+          { 
+            id:'4', 
+            title: 'Call John Doe',
+            text: 'Nulla suscipit vel diam non commodo. Suspendisse sem felis, ornare sed bibendum nec, euismod sed neque. In semper nibh eget odio convallis, id molestie nunc aliquet.',
+            status: 'Active'
+          },
+        ],
+      }
+    }
+  }
+</script>

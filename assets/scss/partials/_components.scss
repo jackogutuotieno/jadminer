@@ -39,23 +39,40 @@
 }
 
 // Buttons
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    background-color: $primary_color;
+    text-align: center;
+}
+
 .btn {
     max-width: 360px;
     border-radius: 0;
 }
   
 .btn-primary {
-    background-color: $primary_color;
+    background-color: transparent;
+    color: $primary_color;
     border: none;
     border-radius: 0;
-    border: 1px solid $primary_color;
+    text-align: right;
+    @include flex;
+    @include align-items(center);
+    @include justify-content(flex-end);
+    span {
+        position: relative;
+        bottom: auto;
+        font-size: inherit;
+        right: auto;
+    }
     &:hover {
         background-color: $white;
         color: $primary_color;
-        border-color: $primary_color;
     }
     &:focus {
-        background-color: $primary_color;
+        background-color: transparent;
+        outline: 0;
+        border-color: transparent;
+        box-shadow: none;
     }
 }
 

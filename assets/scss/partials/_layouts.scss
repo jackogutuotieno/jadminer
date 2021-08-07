@@ -78,6 +78,7 @@ h3 {
 .block-list {
   ul {
     padding: 1rem;
+    padding-bottom: 0;
     li {
       display: block;
       position: relative;
@@ -98,9 +99,13 @@ h3 {
         background: purple;
         color: #fff;
         font-size: .6rem;
-        padding: .45rem .5rem;
-        margin-right: .5rem;
+        width: 1.5rem;
+        height: 1.5rem;
         border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: .5rem;
         &:after {
           display: none;
         }
@@ -108,9 +113,6 @@ h3 {
       p {
         clear: both;
         font-size: .9rem;
-      }
-      &:last-child {
-        border-bottom: none;
       }
     }
   }
