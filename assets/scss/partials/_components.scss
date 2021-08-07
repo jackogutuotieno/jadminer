@@ -110,3 +110,12 @@
         }
     }
 }
+
+// Pricing Table
+.pricingTable {
+    h4 {
+        &:after {
+            margin: 1rem auto !important;
+        }
+    }
+}
