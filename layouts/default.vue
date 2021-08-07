@@ -1,6 +1,5 @@
 <template>
   <div>
-    <TopBar />
     <Navigation />
     <Nuxt />
     <Footer />

@@ -113,6 +113,9 @@
 
 // Pricing Table
 .pricingTable {
+    .card-header {
+        border-radius: 0;
+    }
     h4 {
         &:after {
             margin: 1rem auto !important;

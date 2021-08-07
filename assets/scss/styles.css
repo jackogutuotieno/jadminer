@@ -1,0 +1,454 @@
+/**
+ * Box shadow mixin
+ */
+/**
+ * A mixin which helps you to add depth to elements according to the Google Material Design spec:
+ * http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality
+ *
+ * Please note that the values given in the specification cannot be used as is. To create the same visual experience
+ * the blur parameter has to be doubled.
+ *
+ * Adapted from a LESS version at https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d
+ *
+ * Original Author: Florian Kutschera (@gefangenimnetz), Conceptboard GmbH (@conceptboardapp)
+ *
+ */
+/**
+ * Border Radius
+ */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.counterSummary span,
+.block-list span {
+  position: absolute;
+  bottom: 2.2rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: rgba(176, 9, 201, 0.5);
+}
+
+.card {
+  position: relative;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: none;
+}
+
+.card h2 {
+  font-size: 3rem;
+}
+
+.card h2 span {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  font-size: 3rem;
+  color: #000;
+}
+
+.card .card-title {
+  font-size: 1.4rem;
+}
+
+.card .card-title:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #b009c9;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h3:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #b009c9;
+  margin: 1rem 0;
+}
+
+.title-header {
+  padding: 1rem;
+}
+
+.chartData {
+  margin-top: 1rem;
+}
+
+.chartData .chart {
+  margin-top: 1rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.block-list ul {
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.block-list ul li {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.block-list ul li span {
+  display: inline-block;
+  top: 0;
+  bottom: auto;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.block-list ul li h4 {
+  font-size: 1rem;
+}
+
+.block-list ul li h3 {
+  float: left;
+  background: purple;
+  color: #fff;
+  font-size: .6rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: .5rem;
+}
+
+.block-list ul li h3:after {
+  display: none;
+}
+
+.block-list ul li p {
+  clear: both;
+  font-size: .9rem;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #b009c9;
+  border-color: #b009c9;
+}
+
+a {
+  color: #b009c9;
+}
+
+a:hover, a:focus {
+  color: #b009c9;
+}
+
+.error-404 {
+  padding-bottom: 4rem;
+}
+
+.error-404 span {
+  display: block;
+  font-size: 7rem;
+  color: rgba(176, 9, 201, 0.5);
+  padding: 2rem 0;
+}
+
+.error-404 h2:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #b009c9;
+  margin: .5rem auto;
+}
+
+body {
+  font-family: 'Quicksand', san-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', san-serif;
+  font-weight: 600;
+}
+
+.mainHeader {
+  padding: 2rem;
+  background-color: #b009c9;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
+.mainHeader h1 {
+  color: #fff;
+}
+
+.mainHeader p {
+  color: #fff;
+}
+
+.mainHeader .my-4 {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+#footer {
+  width: 100%;
+  background-color: #b009c9;
+  margin-top: 1rem;
+  padding: 1rem 0;
+}
+
+#footer p {
+  padding: .5rem 0;
+  color: #fff;
+  margin: 0;
+  font-size: .9rem;
+}
+
+.v-sidebar-menu.vsm_expanded .vsm--item_open .vsm--link_level-1 {
+  background-color: #b009c9 !important;
+}
+
+.v-sidebar-menu.vsm_expanded .vsm--item_open .vsm--link_level-1 .vsm--icon {
+  background-color: #b009c9 !important;
+  font-size: 1.4rem;
+}
+
+nav .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+nav .nav-item {
+  position: static;
+}
+
+nav .nav-item .dropdown-menu {
+  left: auto;
+  right: auto;
+  margin: 0;
+  border-radius: 0;
+}
+
+.tsx {
+  display: inline-block;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 5000ms;
+          animation-duration: 5000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.page-enter-active, .page-leave-active {
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+.alert {
+  font-weight: 600;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-tabs .nav-link {
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 3px solid #b009c9;
+}
+
+.nav-tabs .nav-item.show .nav-link {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 3px solid #b009c9;
+}
+
+.carousel-caption {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  bottom: 30%;
+  width: 45%;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  background-color: #b009c9;
+  text-align: center;
+}
+
+.btn {
+  max-width: 360px;
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: transparent;
+  color: #b009c9;
+  border: none;
+  border-radius: 0;
+  text-align: right;
+  -webkit-box: 1;
+  -moz-box: 1;
+  -ms-flex: 1 0 auto;
+  -webkit-box-flex: 1;
+          flex: 1 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.btn-primary span {
+  position: relative;
+  bottom: auto;
+  font-size: inherit;
+  right: auto;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #b009c9;
+}
+
+.btn-primary:focus {
+  background-color: transparent;
+  outline: 0;
+  border-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn-secondary {
+  background-color: #b009c9;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-footer {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.vgt-wrap__footer {
+  color: #fff;
+  border: 1px solid transparent;
+  background: #b009c9;
+}
+
+.form-group .form-control {
+  border-radius: 0;
+  height: 3rem;
+  border: none;
+  border-bottom: 3px solid #b009c9;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.form-group .form-control:focus {
+  border-bottom-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pricingTable .card-header {
+  border-radius: 0;
+}
+
+.pricingTable h4:after {
+  margin: 1rem auto !important;
+}
+
+.counterSummary {
+  margin-top: -3rem;
+}
+
+.tasksTable {
+  padding: 1rem;
+}
+
+.tasksTable thead {
+  background-color: #b009c9;
+  color: #fff;
+}
+
+.b-calendar {
+  display: block;
+}
+
+.b-calendar .b-calendar-inner {
+  min-width: 100%;
+}
+
+.calWidget {
+  margin-top: 1rem;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  background-color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */
