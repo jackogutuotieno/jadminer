@@ -76,6 +76,10 @@
     }
 }
 
+.btn-secondary {
+    background-color: $primary_color;
+}
+
 // Modal
 .modal-content {
     border-radius: 0;
@@ -90,4 +94,19 @@
     color: $white;
     border: 1px solid transparent;
     background: $primary_color;
+}
+
+// Forms
+.form-group {
+    .form-control {
+        border-radius: 0;
+        height: 3rem;
+        border: none;
+        border-bottom: 3px solid $primary_color;
+        background-color: rgba($color: $black, $alpha: .03);
+        &:focus {
+            border-bottom-color: rgba($color: $black, $alpha: .5);
+            box-shadow: none;
+        }
+    }
 }
