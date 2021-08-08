@@ -45,7 +45,6 @@
 }
 
 .btn {
-    max-width: 360px;
     border-radius: 0;
 }
   
@@ -119,6 +118,20 @@
     h4 {
         &:after {
             margin: 1rem auto !important;
+        }
+    }
+}
+
+// Accordion
+.accordion {
+    .card-header {
+        button {
+            background-color: $primary_color;
+            text-align: left;
+            color: $white;
+            border-color: $primary_color;
+            font-size: 1.2rem;
+            font-weight: 700;
         }
     }
 }
